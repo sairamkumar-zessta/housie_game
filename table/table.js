@@ -15,6 +15,7 @@ for (var i=0;i<9;i++){
     table.appendChild(row)
 }
 function addStyles(){
+    document.getElementById("textStart").textContent = "";
     if (arr.length === 90){
         alert('Game over')
     }
@@ -32,5 +33,7 @@ function addStyles(){
     let re = document.getElementById(btnId) ;
     re.classList.add("btn-style")
     displayNum.textContent = randomNumber;
+    displayNum.classList.add("circle");
+
 }
 } 
